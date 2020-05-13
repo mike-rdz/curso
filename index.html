@@ -4,13 +4,54 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" href="favicon.png" />
-    <title>JavaScript embedded into the HTML</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <title>Creando un form validation</title>
   </head>
   <body>
-    <script>
-      console.log('Greeting from Javascript!!!');
-      console.log('Save it from Javascript!!!');
-      console.log(2 + 2);
-    </script>
+    <div class="container">
+      <div class="header">
+        <h2>Creando una cuenta</h2>
+      </div>
+      <form class="form" id="form" action="">
+        <div class="form-control">
+          <label for="">Username</label>
+          <input type="text" placeholder="mike" id="username" />
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label for="">Email</label>
+          <input type="email" placeholder="mike@live.com" id="email" />
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label for="">Password</label>
+          <input type="password" placeholder="password" id="password" />
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label for="">Password Check</label>
+          <input type="password" placeholder="password two" id="password2" />
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>Error message</small>
+        </div>
+        <button>Submit</button>
+      </form>
+    </div>
+    <script src="index.js"></script>
   </body>
 </html>
